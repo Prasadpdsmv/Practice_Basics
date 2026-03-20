@@ -48,7 +48,7 @@ public class ListPractice {
         // 3. Update element
         fruits.set(1, "Blueberry");
         fruits.get(1);
-
+        //fruits.stream().allMatch();
 
 
         // 5. Iterate using for-each loop
