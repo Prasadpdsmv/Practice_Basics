@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class PrcCollctn {
 
@@ -19,7 +16,6 @@ public class PrcCollctn {
 
         Map<List<Integer>, List<String>> hm2=new HashMap<>();
         List<Integer> lisat= new ArrayList<>();
-
 
         System.out.println("map values :"+ hm1);
 

@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class PrcticeIF {
 
@@ -46,8 +48,15 @@ public class PrcticeIF {
                 System.out.print(" ");
             }
             System.out.println();
-
         }
+        String s="sdfibuh345458";
+
+        Pattern patr=Pattern.compile("\\d+");
+        Matcher match=patr.matcher(s);
+        System.out.println(match.find());
+        System.out.println(match.find(1));
+        System.out.println(match.results());
+        System.out.println(match.group());
     }
     public void aRRaysprc(){
         int age[]={12,13,18,20,50};
@@ -179,7 +188,7 @@ public class PrcticeIF {
 //        System.out.println(message);
 
         PrcticeIF object= new PrcticeIF();
-        object.pritnStrPyramid();
+        //object.pritnStrPyramid();
        // object.forLoopPrct();
         //object.samprint();
         //object.aRRaysprc();
@@ -189,7 +198,8 @@ public class PrcticeIF {
 
         //PrcticeIF object2;
         //object.stringPrcIndex();
-        object.interViewQus2();
+        //object.interViewQus2();
+        object.forLoopPrct();
 
     }
 

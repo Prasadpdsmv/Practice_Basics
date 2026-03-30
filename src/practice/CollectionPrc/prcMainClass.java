@@ -32,6 +32,21 @@ public class prcMainClass {
         Stream<Employee>str=employees.stream().filter(emp ->emp.getSalary()<70000);
        // str.forEach(System.out::println);
         str.map(emp ->emp.getAge()).forEach(System.out::println);
+        //str.filter(empq ->empq.getAge()>30);
 
+        String sqa="BACD DFGB KHFKC GFEHN";
+        String[] astr=sqa.split(" ");
+
+        System.out.println("  printing of arays ");
+
+        Arrays.stream(astr).map(word ->{char[] sd=word.toCharArray();
+                                                Arrays.sort(sd);
+                                                return new String(sd);} )
+                .sorted().forEach(sad -> System.out.println(sad));
+
+        System.out.println();
+        Arrays.stream(astr).forEach(word ->{
+            System.out.println(word);
+        });
     }
 }
